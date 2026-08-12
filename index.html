@@ -7,27 +7,37 @@
     <title>Crystals AI</title>
   </head>
   <body>
-    <h1>Crystals AI</h1>
-    <main>
-      <form>
-        <input
-          type="text"
-          id="userInput"
-          placeholder="Type your Crystal here..."
-        />
-        <button type="submit">Submit</button>
-      </form>
-    </main>
-    <footer>
-      This AI Project was Coded by
-      <a href="https://github.com/shiz2633" target="_blank">Sirin Kiani</a> on
-      <a href="https://github.com/shiz2633/Crystals-AI" target="_blank"
-        >GitHub</a
-      >
-      Hosted on
-      <a href="https://crystals-ai.netlify.app" target="_blank">Netlify</a>
-    </footer>
-
+    <div class="container">
+      <img src="src/logo.png" alt="Crystals AI Logo" />
+      <h1>Crystals AI</h1>
+      <main>
+        <form>
+          <input
+            type="text"
+            id="userInput"
+            placeholder="Type your Crystal here..."
+            autofocus
+            required
+            autocomplete="off"
+          />
+          <button type="submit">Submit</button>
+          <div>
+            <!-- The results will be displayed here. -->
+            <br />
+            <!-- This is a placeholder for the AI response. -->
+          </div>
+        </form>
+      </main>
+      <footer>
+        This AI Project was Coded by
+        <a href="https://github.com/shiz2633" target="_blank">Sirin Kiani</a> on
+        <a href="https://github.com/shiz2633/Crystals-AI" target="_blank"
+          >GitHub</a
+        >
+        Hosted on
+        <a href="https://crystals-ai.netlify.app" target="_blank">Netlify</a>
+      </footer>
+    </div>
     <script src="src/script.js"></script>
   </body>
 </html>
