@@ -3,16 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Crystals AI</title>
   </head>
+
   <body>
     <div class="container">
       <header>
         <h1>Crystals AI</h1>
       </header>
       <main>
-        <form>
+        <form id="crystal-generator-form">
           <input
             type="text"
             id="userInput"
@@ -24,11 +26,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="results">
-          RESULTS HERE
-          <br />
-          <!-- This is a placeholder for the AI response. -->
-        </div>
+        <div class="results" id="results"></div>
       </main>
       <footer>
         This AI Project was Coded by
