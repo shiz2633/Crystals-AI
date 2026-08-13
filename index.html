@@ -8,8 +8,9 @@
   </head>
   <body>
     <div class="container">
-      <img src="src/logo.png" alt="Crystals AI Logo" />
-      <h1>Crystals AI</h1>
+      <header>
+        <h1>Crystals AI</h1>
+      </header>
       <main>
         <form>
           <input
@@ -19,14 +20,15 @@
             autofocus
             required
             autocomplete="off"
+            class="input-field"
           />
-          <button type="submit">Submit</button>
-          <div>
-            <!-- The results will be displayed here. -->
-            <br />
-            <!-- This is a placeholder for the AI response. -->
-          </div>
+          <input type="submit" class="submit-button" />
         </form>
+        <div class="results">
+          RESULTS HERE
+          <br />
+          <!-- This is a placeholder for the AI response. -->
+        </div>
       </main>
       <footer>
         This AI Project was Coded by
