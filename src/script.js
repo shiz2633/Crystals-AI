@@ -23,17 +23,13 @@ function displayCrystalImage(response) {
 
   if (response.data.photos.length > 0) {
     let photo = response.data.photos[0];
-
     imageElement.innerHTML = `
-      <img 
-        src="${photo.src.large}"
-        alt="${photo.alt}"
-        class="crystal-image"
-      />
-      <p class="photo-credit">
-        Photo by ${photo.photographer} on Pexels
-      </p>
-    `;
+  <img
+    src="${photo.src.large}"
+    alt="${photo.alt || "Crystal"}"
+    class="crystal-image"
+  />
+`;
   } else {
     imageElement.innerHTML = "<p>No crystal image found.</p>";
   }
